@@ -1,12 +1,13 @@
-// examples
-// https://api.themoviedb.org/3/discover/movie?primary_release_year=2010&sort_by=vote_average.desc&api_key=f4072addfa53882be2765f3851168056
-// https://api.themoviedb.org/3/movie/550?api_key=f4072addfa53882be2765f3851168056
-// https://api.themoviedb.org/3/search/movie?query=aliens&api_key=f4072addfa53882be2765f3851168056
-const URL = 'https://api.themoviedb.org/3';
+const getRandom = require('../helplers/').random;
+const imdb250 = require('../../playground/imdbTop250.json');
+
 
 const api = {
+    random250: function () {
+        const index = getRandom(249);
 
+        return imdb250[index];
+    }
 };
-
 
 module.exports = api;

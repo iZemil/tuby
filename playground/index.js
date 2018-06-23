@@ -34,6 +34,3 @@ request('https://www.imdb.com/chart/top', function(err, res, body) {
         console.log('Success appending');
     });
 });
-
-
-// const poster = `https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg`;
